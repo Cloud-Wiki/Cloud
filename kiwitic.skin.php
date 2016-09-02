@@ -19,21 +19,21 @@ class SkinKiwitic extends SkinTemplate {
 		
 //		크기 자동 변경
 		$out->addMeta( 'viewport', 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' );
-		$out->addMeta( 'description', 'KiwiWiki' );
-		$out->addMeta( 'keywords', 'wiki,KiwiWiki,키위위키,' . $this->getSkin()->getTitle() );
+		$out->addMeta( 'description', 'CloudWiki' );
+		$out->addMeta( 'keywords', 'wiki,CloudWiki,위키,' . $this->getSkin()->getTitle() );
 //		크롬, 파이어폭스 OS, 오페라
-		$out->addMeta('theme-color', '#AA7949');
+		$out->addMeta('theme-color', '#45B3E0');
 //		윈도우 폰
-		$out->addMeta('msapplication-navbutton-color', '#AA7949'); 
+		$out->addMeta('msapplication-navbutton-color', '#45B3E0'); 
 //		트위터 카드 시작
 		$out->addMeta('twitter:card', 'summary');
-		$out->addMeta('twitter:site', '@kiwkius');
+		$out->addMeta('twitter:site', '@cloudwikitwt');
 		$out->addMeta('twitter:title', $this->getSkin()->getTitle() );
 		$out->addMeta('twitter:description', $out->mBodytext );
 		$out->addMeta('twitter:creator', '@wikicocoa');
-		$out->addMeta('twitter:image', 'https://kiwki.us/kiwiki.png');
+		$out->addMeta('twitter:image', 'https://cloudwiki.ga/mediawiki-1.27.1/skins/kiwitic/img/twit.png');
 		$out->addMeta('apple-mobile-web-app-capable', 'yes');
-		$out->addMeta('apple-mobile-web-app-status-bar-style', '#AA7949');
+		$out->addMeta('apple-mobile-web-app-status-bar-style', '#45B3E0');
 		$out->addMeta('mobile-web-app-capable', 'Yes');
 //		트위터 카드 완료
 	}//end initPage
@@ -83,7 +83,7 @@ class KiwiticTemplate extends BaseTemplate {
           <div class="navbar-header">
               <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse"
               type="button"><span class="icon-bar"></span> <span class="icon-bar"></span>
-              <span class="icon-bar"></span></button> <a class="navbar-brand" href="<?php echo $this->data['nav_urls']['mainpage']['href']; ?>"><img src='/skins/kiwitic/img/logo.png' width='200px'></a>
+              <span class="icon-bar"></span></button> <a class="navbar-brand" href="<?php echo $this->data['nav_urls']['mainpage']['href']; ?>"><img src='/mediawiki-1.27.1/skins/kiwitic/img/logo.png' width='200px'></a>
           </div>
 
           <div class="navbar-collapse collapse">
@@ -229,7 +229,7 @@ class KiwiticTemplate extends BaseTemplate {
 		</div>
 	<?php } ?>
 	<!--상단 광고 -->
-	<ins id="noadsense" class="adsbygoogle" style="display:block;height:90px;" data-ad-client="ca-pub-6081569795236180" data-ad-slot="4545283356" data-ad-format="auto"></ins><br>
+	<!--<ins id="noadsense" class="adsbygoogle" style="display:block;height:90px;" data-ad-client="ca-pub-6081569795236180" data-ad-slot="4545283356" data-ad-format="auto"></ins><br>-->
 	<!--상단 광고 끝 -->
 	<?php if ( $this->data['catlinks'] ) {
 	$this->html( 'catlinks' );
@@ -264,7 +264,6 @@ class KiwiticTemplate extends BaseTemplate {
 					<a href="//creativecommons.org/licenses/by-sa/4.0/deed.ko"><img class="pull-right" src="//i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
 					<a href="//www.mediawiki.org"><img style="margin-right: 10px;" class="pull-right" src="//www.mediawiki.org/static/images/poweredby_mediawiki_88x31.png"></a>
 					<a href="//shapebootstrap.net"><img style="margin-right: 10px; margin-top:5px; margin-bottom: 20px;" class="pull-right" src="//shapebootstrap.net/templates/default/images/presets/preset1/logo.png"></a>	
-					<a href="//secure.comodo.com/ttb_searcher/trustlogo?v_querytype=W&v_shortname=CL1&v_search=https://kiwki.us/&x=6&y=5"><img class="pull-right" src="//kiwki.us/comodo_secure_seal.png"></a>
                   </div>
             </div>
         </div>
