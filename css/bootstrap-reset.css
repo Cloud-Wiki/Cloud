@@ -330,7 +330,7 @@ div.mw-geshi div, div.mw-geshi div pre,	div.mw-geshi div span, span.mw-geshi, pr
     list-style-image: none;
 }
 html {
-    background-color: #9CE159;
+    background-color: #45B3E0;
 }
 #toc {
     display: table;
@@ -650,7 +650,7 @@ blockquote {
     font-size: 16px;
     border: solid 1px #aaa;
     background: #f9f9f9;
-    border-left: solid 5px #9CE159;
+    border-left: solid 5px #45B3E0;
     border-radius: 3px;
 }
 .copyright p a {
