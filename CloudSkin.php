@@ -53,7 +53,7 @@ class SkinCloud extends SkinTemplate {
 	}//end setupSkinUserCss
 }
 
-class KiwiticTemplate extends BaseTemplate {
+class CloudTemplate extends BaseTemplate {
 	
 	public $skin;
 
