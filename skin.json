@@ -1,22 +1,22 @@
 {
-	"name": "Kiwitic",
+	"name": "CloudSkin",
 	"author": "cosmic, 김동동, 2DU, 코코아, BluePencil",
 	"url": "https://shapebootstrap.net/item/1524925-acme-free-responsive-corporate-template/comments",
-	"descriptionmsg": "Kiwitic!",
-	"namemsg": "Kiwitic",
+	"descriptionmsg": "구름위키의 기본 스킨입니다.",
+	"namemsg": "Cloud",
 	"license-name": "FREE LICENSE",
 	"type": "skin",
 	"ValidSkinNames": {
-		"kiwitic": "Kiwitic"
+		"cloud": "Cloud"
 	},
 	"AutoloadClasses": {
-		"SkinKiwitic": "kiwitic.skin.php"
+		"SkinCloud": "CloudSkin.php"
 	},
 	"MessageDirs": {
-		"kiwitic": "i18n"
+		"cloud": "i18n"
 	},
 	"ResourceModules": {
-		"skins.kiwitic": {
+		"skins.cloud": {
 			"styles": {
 				"css/bootstrap.min.css": {
 					"media": "all"
@@ -46,6 +46,6 @@
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
-		"remoteSkinPath": "kiwitic"
+		"remoteSkinPath": "cloud"
 	}
 }

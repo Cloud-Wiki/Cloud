@@ -4,22 +4,22 @@ if ( ! defined( 'MEDIAWIKI' ) ) die( "This is an extension to the MediaWiki pack
 
 $wgExtensionCredits['skin'][] = array(
 	'path'        => __FILE__,
-	'name'        => 'Kiwitic',
+	'name'        => 'Cloud',
 	'url'         => 'https://shapebootstrap.net/item/1524925-acme-free-responsive-corporate-template/comments',
 	'author'      => 'cosmic, 김동동, 2DU, 코코아, CES, 키위',
-	'description' => '키위위키의 기본테마입니다.',
+	'description' => '구름위키의 기본 스킨입니다.',
         'license-name' => "FREE LICENSE",
         'version' => 'Release',
 );
 
-$wgValidSkinNames['kiwitic'] = 'Kiwitic';
-$wgAutoloadClasses['SkinKiwitic'] = __DIR__ . '/kiwitic.skin.php';
+$wgValidSkinNames['cloud'] = 'Cloud';
+$wgAutoloadClasses['SkinCloud'] = __DIR__ . '/CloudSkin.php';
 
 
 $skinDirParts = explode( DIRECTORY_SEPARATOR, __DIR__ );
 $skinDir = array_pop( $skinDirParts );
 
-$wgResourceModules['skins.kiwitic'] = array(
+$wgResourceModules['skins.cloud'] = array(
 	'styles' => array(
 		$skinDir . '/css/bootstrap.min.css'            => array( 'media' => 'all' ),
 		$skinDir . '/css/theme.css'            => array( 'media' => 'all' ),

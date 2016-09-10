@@ -3,11 +3,11 @@ if ( ! defined( 'MEDIAWIKI' ) ) {
 	die( -1 );
 }//end if
 
-class SkinKiwitic extends SkinTemplate {
+class SkinCloud extends SkinTemplate {
 	/** Using Bootstrap */
-	public $skinname = 'kiwitic';
-	public $stylename = 'kiwitic';
-	public $template = 'KiwiticTemplate';
+	public $skinname = 'cloud';
+	public $stylename = 'cloud';
+	public $template = 'CloudTemplate';
 	public $useHeadElement = true;
 
 	/**
@@ -15,7 +15,7 @@ class SkinKiwitic extends SkinTemplate {
 	 */
 	public function initPage( OutputPage $out ) {
 		parent::initPage( $out );
-		$out->addModuleScripts( 'skins.kiwitic' );
+		$out->addModuleScripts( 'skins.cloud' );
 		
 //		크기 자동 변경
 		$out->addMeta( 'viewport', 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' );
@@ -31,7 +31,7 @@ class SkinKiwitic extends SkinTemplate {
 		$out->addMeta('twitter:title', $this->getSkin()->getTitle() );
 		$out->addMeta('twitter:description', $out->mBodytext );
 		$out->addMeta('twitter:creator', '@wikicocoa');
-		$out->addMeta('twitter:image', 'https://cloudwiki.ga/mediawiki-1.27.1/skins/kiwitic/img/twit.png');
+		$out->addMeta('twitter:image', 'https://cloudwiki.ga/mediawiki-1.27.1/skins/cloud/img/twit.png');
 		$out->addMeta('apple-mobile-web-app-capable', 'yes');
 		$out->addMeta('apple-mobile-web-app-status-bar-style', '#45B3E0');
 		$out->addMeta('mobile-web-app-capable', 'Yes');
@@ -46,9 +46,9 @@ class SkinKiwitic extends SkinTemplate {
 
 		parent::setupSkinUserCss( $out );
 
-		$out->addModuleStyles( 'skins.kiwitic' );
+		$out->addModuleStyles( 'skins.cloud' );
 		
-		$out->addStyle( 'kiwitic/font-awesome/css/font-awesome.min.css' );
+		$out->addStyle( 'cloud/font-awesome/css/font-awesome.min.css' );
 
 	}//end setupSkinUserCss
 }
