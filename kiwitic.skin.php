@@ -229,7 +229,8 @@ class KiwiticTemplate extends BaseTemplate {
 	<!--상단 광고 끝 -->
 	<?php if ( $this->data['catlinks'] ) {
 	$this->html( 'catlinks' );
-	} ?><br>
+	echo '<br>';
+	} ?>
 	<?php $this->html( 'bodytext' ); ?>
 	<!--하단 광고 -->
 	<!--<ins id="noadsense" class="adsbygoogle" style="display:block;height:90px;" data-ad-client="ca-pub-6081569795236180" data-ad-slot="4545283356" data-ad-format="auto"></ins><br>-->
@@ -245,9 +246,7 @@ class KiwiticTemplate extends BaseTemplate {
 	</div>
 	</div>
 	</section>
-	<div class="scroll-buttons"><a class="random-link" href="/index.php?title=%ED%8A%B9%EC%88%98:%EC%9E%84%EC%9D%98%EB%AC%B8%EC%84%9C"><i class="fa fa-exchange" aria-hidden="true"></i>
-<span style="display:none">Random</span></a><a class="scroll-button" href="<?php echo '/index.php?title='.$_URITITLE.'&oldid='.$revid.'&action=edit'; ?>"><i class="fa fa-pencil" aria-hidden="true"></i>
-</a><a class="scroll-toc" href="#toc"><i class="fa fa-list-alt" aria-hidden="true"></i>
+	<div class="scroll-buttons">
 </a><a class="scroll-button" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i>
 </a><a class="scroll-bottom" href="#footer"><i class="fa fa-arrow-down" aria-hidden="true"></i>
 </a></div>
