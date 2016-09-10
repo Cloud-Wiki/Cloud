@@ -130,12 +130,8 @@ class KiwiticTemplate extends BaseTemplate {
                       "dropdown" data-toggle="dropdown" href="#">외부 페이지 <i class="fa fa-angle-down"></i>
                       </a>
                       <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
-			<li id="t-re"><?php echo '<a href="//mirror.kiwki.us">';?>키위미러</a></li>
-			<li id="t-re"><?php echo '<a href="//twitter.com/our_kiwi">';?>키위위키 트위터</a></li>
-			<li id="t-re"><?php echo '<a href="//bbs.kiwki.us">';?>키위위키 게시판</a></li>
-			<li id="t-re"><?php echo '<a href="//issues.kiwki.us">';?>키위위키 이슈 트래커</a></li>
-			<li id="t-re"><?php echo '<a href="//wikiwi.xyz">';?>키위위키 서버 상태</a></li>
-			<li id="t-re"><?php echo '<a href="//twicewiki.net">';?>트둥백과</a></li>
+			<li id="t-re"><?php echo '<a href="//twitter.com/cloudwikitwt">';?>구름위키 트위터</a></li>
+			<li id="t-re"><?php echo '<a href="//cloudwikibbs.ga/xe/">';?>구름위키 게시판</a></li>
 						</ul>
 				</li>
 				<li class="dropdown">
@@ -261,7 +257,7 @@ class KiwiticTemplate extends BaseTemplate {
             <div class="row">
                   <div class="copyright">
                     <p><?php $this->html( 'copyright' ) ?></p>
-					<a href="//creativecommons.org/licenses/by-sa/4.0/deed.ko"><img class="pull-right" src="//i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+					<a href="//creativecommons.org/licenses/by-nc-sa/4.0/deed.ko"><img class="pull-right" src="//i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a>
 					<a href="//www.mediawiki.org"><img style="margin-right: 10px;" class="pull-right" src="//www.mediawiki.org/static/images/poweredby_mediawiki_88x31.png"></a>
 					<a href="//shapebootstrap.net"><img style="margin-right: 10px; margin-top:5px; margin-bottom: 20px;" class="pull-right" src="//shapebootstrap.net/templates/default/images/presets/preset1/logo.png"></a>	
                   </div>
