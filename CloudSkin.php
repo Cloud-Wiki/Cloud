@@ -48,7 +48,7 @@ class SkinCloud extends SkinTemplate {
 
 		$out->addModuleStyles( 'skins.cloud' );
 		
-		$out->addStyle( 'cloud/font-awesome/css/font-awesome.min.css' );
+		$out->addStyle( 'Cloud/font-awesome/css/font-awesome.min.css' );
 
 	}//end setupSkinUserCss
 }
