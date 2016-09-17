@@ -31,7 +31,7 @@ class SkinCloud extends SkinTemplate {
 		$out->addMeta('twitter:title', $this->getSkin()->getTitle() );
 		$out->addMeta('twitter:description', $out->mBodytext );
 		$out->addMeta('twitter:creator', '@wikicocoa');
-		$out->addMeta('twitter:image', 'https://cloudwiki.ga/mediawiki-1.27.1/skins/Cloud/img/twit.png');
+		$out->addMeta('twitter:image', 'https://cloudwiki.ga/mediawiki-1.27.1/skins/Cloud/img/wiki.png');
 		$out->addMeta('apple-mobile-web-app-capable', 'yes');
 		$out->addMeta('apple-mobile-web-app-status-bar-style', '#45B3E0');
 		$out->addMeta('mobile-web-app-capable', 'Yes');
