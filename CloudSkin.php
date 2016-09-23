@@ -116,8 +116,8 @@ class CloudTemplate extends BaseTemplate {
                       "dropdown" data-toggle="dropdown" href="#"><i class="fa fa-external-link" aria-hidden="true"></i>  <span id="mobile">외부 페이지</span> <i class="fa fa-angle-down"></i>
                       </a>
                       <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
-			<li id="t-re"><?php echo '<a href="//twitter.com/cloudwikitwt">';?>구름위키 트위터</a></li>
-			<li id="t-re"><?php echo '<a href="//cloudwikibbs.ga/xe/">';?>구름위키 게시판</a></li>
+			<li id="t-re"><?php echo '<a href="//twitter.com/cloudwikitwt">';?><i class="fa fa-twitter" aria-hidden="true"></i> 구름위키 트위터</a></li>
+			<li id="t-re"><?php echo '<a href="//cloudwikibbs.ga/xe/">';?><i class="fa fa-external-link" aria-hidden="true"></i> 구름위키 게시판</a></li>
 						</ul>
 				</li>
 				<li class="dropdown">
