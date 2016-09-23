@@ -37,7 +37,8 @@
 			"scripts": [
 				"js/jquery.min.js",
 				"js/bootstrap.min.js",
-				"js/Gadget-ReferenceTooltips-ko.js"
+				"js/Gadget-ReferenceTooltips-ko.js",
+				"js/R-18_NoAD.js"
 			]
 		}
 	},
