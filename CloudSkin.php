@@ -101,7 +101,7 @@ class CloudTemplate extends BaseTemplate {
 				$theData = array_reverse($this->getToolbox()); ?>
 				<li class="dropdown">
                    <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
-                      "dropdown" data-toggle="dropdown" href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i>  <span id="mobile">도구</span> <i class="fa fa-angle-down"></i>
+                      "dropdown" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-plus-circle" aria-hidden="true"></i>  <span id="mobile">도구</span> <i class="fa fa-angle-down"></i>
                       </a>
                       <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
 						<li id="t-upload"><a href="/wiki/%ED%8A%B9%EC%88%98:%EC%98%AC%EB%A6%AC%EA%B8%B0" title="파일 업로드 [Alt+Shift+u]" accesskey="u"><i class="fa fa-upload" aria-hidden="true"></i> 파일 업로드</a></li>
@@ -113,7 +113,7 @@ class CloudTemplate extends BaseTemplate {
 				</li>
 				<li class="dropdown">
                    <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
-                      "dropdown" data-toggle="dropdown" href="#"><i class="fa fa-external-link" aria-hidden="true"></i>  <span id="mobile">외부 페이지</span> <i class="fa fa-angle-down"></i>
+                      "dropdown" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-external-link" aria-hidden="true"></i>  <span id="mobile">외부 페이지</span> <i class="fa fa-angle-down"></i>
                       </a>
                       <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
 			<li id="t-re"><?php echo '<a href="//twitter.com/cloudwikitwt">';?><i class="fa fa-twitter" aria-hidden="true"></i> 구름위키 트위터</a></li>
@@ -122,7 +122,7 @@ class CloudTemplate extends BaseTemplate {
 				</li>
 				<li class="dropdown">
                    <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover=
-                      "dropdown" data-toggle="dropdown" href="#"><i class="fa fa-book" aria-hidden="true"></i>  <span id="mobile">도움말</span> <i class="fa fa-angle-down"></i>
+                      "dropdown" data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-book" aria-hidden="true"></i>  <span id="mobile">도움말</span> <i class="fa fa-angle-down"></i>
                       </a>
                       <ul aria-labelledby="<?php echo $this->msg($theMsg); ?>" role="menu" class="dropdown-menu" <?php $this->html( 'userlangattributes' ); ?>>
                       	<li id="t-help1"><?php echo Linker::linkKnown( Title::makeTitle( NS_HELP, '위키문법' ), '<i class="fa fa-book" aria-hidden="true"></i>  위키 문법', array( 'title' => '위키 문법에 대한 도움말을 보여줍니다.' ) ); ?></li>
@@ -150,7 +150,7 @@ class CloudTemplate extends BaseTemplate {
 				
             ?>
 				<li class="dropdown">
-				<a href="#" class="dropdown-toggle" type="button" id="login-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<a href="javascript:void(0);" class="dropdown-toggle" type="button" id="login-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img style='width: 32px;' class="profile-img" src="//secure.gravatar.com/avatar/<?php echo $email; ?>" /></a>
 					<ul class="dropdown-menu">
 						<li id="pt-mypage"><?php echo Linker::linkKnown( Title::makeTitle( NS_USER, $wgUser->getName() ),'<i class="fa fa-user" aria-hidden="true"></i> ' . $wgUser->getName(), array( 'title' => '사용자 문서를 보여줍니다.' ) ); ?></li>
@@ -207,9 +207,7 @@ class CloudTemplate extends BaseTemplate {
 	<div class="row">
 	<div class="col-md-10 col-md-offset-1 mar-b-30">
 	<?php if ( $this->data['sitenotice'] && $_COOKIE['alertcheck'] != "yes" ) { ?>
-		<div id="sitenotice">
-			<?php $this->html( 'sitenotice' ) ?>
-		</div>
+		<div id="sitenotice"><div style="margin-bottom: 10px;">공지<span style="float:right;"><div id="folding_2" style="display:block;">[<a href="javascript:void(0);" onclick="var f=document.getElementById('folding_1');var s=f.style.display=='block';f.style.display=s?'none':'block';this.className=s?'':'opened';var f=document.getElementById('folding_2');var s=f.style.display=='none';f.style.display=s?'block':'none';var f=document.getElementById('folding_3');var s=f.style.display=='block';f.style.display=s?'none':'block';">펼치기</a>]</div><div id="folding_3" style="display:none;">[<a href="javascript:void(0);" onclick="var f=document.getElementById('folding_1');var s=f.style.display=='block';f.style.display=s?'none':'block';this.className=s?'':'opened';var f=document.getElementById('folding_2');var s=f.style.display=='none';f.style.display=s?'block':'none';var f=document.getElementById('folding_3');var s=f.style.display=='block';f.style.display=s?'none':'block';">접기</a>]</div></a></span><div id="folding_1" style="display:none;"><br><?php $this->html( 'sitenotice' ) ?></div></div></div>
 	<?php } ?>
 	<!--상단 광고 -->
 	<!--<ins id="noadsense" class="adsbygoogle" style="display:block;height:90px;" data-ad-client="ca-pub-6081569795236180" data-ad-slot="4545283356" data-ad-format="auto"></ins><br>-->
@@ -219,10 +217,7 @@ class CloudTemplate extends BaseTemplate {
 	echo '<br>';
 	} ?>
 	<?php $this->html( 'bodytext' ); ?>
-	<!--하단 광고 -->
-	<!--<ins id="noadsense" class="adsbygoogle" style="display:block;height:90px;" data-ad-client="ca-pub-6081569795236180" data-ad-slot="4545283356" data-ad-format="auto"></ins><br>-->
-	<!--하단 광고 끝 -->
-	<?php if ( $this->data['dataAfterContent'] ): ?>
+<?php if ( $this->data['dataAfterContent'] ): ?>
 				<div class="data-after-content">
 				<!-- dataAfterContent -->
 				<?php $this->html( 'dataAfterContent' ); ?>
@@ -234,7 +229,7 @@ class CloudTemplate extends BaseTemplate {
 	</div>
 	</section>
 	<div class="scroll-buttons">
-</a><a class="scroll-button" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i>
+</a><a class="scroll-button" href="javascript:void(0);"><i class="fa fa-arrow-up" aria-hidden="true"></i>
 </a><a class="scroll-bottom" href="#footer"><i class="fa fa-arrow-down" aria-hidden="true"></i>
 </a></div>
 	<!--small footer start -->
