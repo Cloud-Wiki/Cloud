@@ -229,7 +229,7 @@ class CloudTemplate extends BaseTemplate {
 	</div>
 	</section>
 	<div class="scroll-buttons">
-</a><a class="scroll-button" href="javascript:void(0);"><i class="fa fa-arrow-up" aria-hidden="true"></i>
+</a><a class="scroll-button" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i>
 </a><a class="scroll-bottom" href="#footer"><i class="fa fa-arrow-down" aria-hidden="true"></i>
 </a></div>
 	<!--small footer start -->
